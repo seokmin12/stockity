@@ -1,0 +1,121 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+div.wrap {
+    position: relative;
+    width: 100%;
+}
+
+div.background {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    display: block;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    height: 1000px;
+}
+
+div.sign_in {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    top: 150px;
+    flex-direction: column;
+}
+
+div.sign_in fieldset {
+    width: 60%;
+    margin: auto;
+    border: 0;
+}
+
+div.sign_in h1 {
+    margin: 0px 0px 90px 0px;
+    color: #fff;
+}
+
+div.sign_in input {
+    display: table;
+}
+div.sign_in input#id, div.sign_in input#pw {
+    z-index: 2;
+    width: 485px;
+    height: 20px;
+    padding: 16px 24px;
+    font-size: 15px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 0;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+div.sign_in input#sign_in {
+    margin: auto;
+    height: 55px;
+    border-radius: 10px;
+    width: 530px;
+    background-color: #2ea44f;
+    color: #fff;
+    font-size: 17px;
+    border: 0px;
+}
+
+div.sign_in input#sign_in:hover {
+    background-color: #288F45;
+}
+
+div.sign_in input:focus {
+    outline: none;
+}
+
+div.sign_in div.lost {
+    /* position: absolute; */
+    z-index: 3;
+    margin: auto;
+    text-align: center;
+    width: 30%;
+}
+
+div.sign_in div.lost a {
+    color: #5096E6;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    div.wrap {
+        height: 100%;
+    }
+
+    div.background {
+        height: 100%;
+    }
+
+    div.sign_in {
+        top: 70px;
+        width: 100%;
+    }
+
+    div.sign_in h1 {
+        margin: 0px 0px 90px 0px;
+    }
+
+    div.sign_in input#id, div.sign_in input#pw {
+        width: 440px;
+        padding: 16px 0px 16px 24px;
+        margin-bottom: 20px;
+    }
+
+    div.sign_in input#sign_in {
+        width: 465px;
+    }
+}

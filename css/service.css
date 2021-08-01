@@ -1,0 +1,151 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+div#page_num {
+    text-align: center;
+}
+
+p#user_id {
+    margin: auto;
+}
+
+
+button#modalbutton {
+    display: none;
+}
+
+div.modal-body {
+    width: 100%;
+}
+
+input#money {
+    width: 70%;
+    margin: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+div.choose_country {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.radio_items {
+    width: 100px;
+    height: 100px;
+}
+
+.radio_items input[type="radio"] {
+    display:none;
+}
+
+.radio_items input[type="radio"] + span{
+    display: inline-flex;
+    background: none;
+    border: 1px solid #dfdfdf;  
+    padding: 0px 10px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio_items input[type="radio"]:checked + span{
+    border: 1px solid #23a3a7;
+    background: #23a3a7;
+    color: #fff;
+}
+
+div.table {
+    width: 80%;
+    margin: auto;
+}
+
+div.sub {
+    margin: auto;
+    width: 100%;
+}
+
+div.table div.main {
+    width: 100%;
+    /* margin: auto; */
+}
+
+div.table div.main table {
+    width: 100%;
+}
+
+h1#page_num {
+    position: relative;
+    margin: 0;
+}
+
+input#keyword {
+    float: right;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+input#keyword:focus {
+    outline: none;
+}
+
+table {
+    margin: auto;
+    border-spacing: 0 10px;
+}
+
+table thead {
+    display: table-header-group;
+}
+
+table thead tr {
+    display: table-row;
+}
+
+table thead tr th {
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px;
+    border-color: #454d55;
+    border: none;
+}
+
+table tbody tr td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    div.table {
+        width: 95%;
+        margin: auto;
+    }
+
+    div.table div.main {
+        overflow: auto;
+    }
+
+    table {
+        font-size: 14px;
+        margin: 0;
+    }
+}

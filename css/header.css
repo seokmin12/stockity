@@ -1,0 +1,252 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    width: 92%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+header nav div.logo a img {
+    width: 125px;
+}
+
+header nav i#toggle_btn {
+    position: absolute;
+    align-items: center;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+}
+
+div.navbar_content {
+    display: block;
+}
+
+ul.navbar_menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+li.navbar_item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0px 20px 0px 20px;
+}
+
+li.navbar_item a {
+    align-items: center;
+    margin: 0;
+    padding: 26px 10px 26px 10px;
+    border-radius: 8px;
+}
+
+li.navbar_item a:hover {
+    background-color: #E9EDF2;
+    color: black;
+}
+
+p#user_id {
+    cursor: pointer;
+}
+
+div.user_menu {
+    width: 150px; 
+    height: 200px; 
+    position: absolute;
+    float: right; 
+    z-index: 4; 
+    background-color:#fff; 
+    display: none;
+    top: 80px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+div.user_menu p, div.user_menu h3 {
+    text-align: center;
+}
+
+div.user_menu h3 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(225 228 232);
+    font-size: 19px;
+}
+
+div.user_menu a {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+}
+
+div.user_menu a:hover {
+    background-color: #fff;
+}
+
+form input#money {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 0px 5px 0px 5px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+form input#money:focus {
+    outline: none;
+}
+
+form input#money_submit {
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background: none;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+form input#money_submit:hover {
+    background-color: #0366d6;
+    color: #fff;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input#logout {
+    height: 30px;
+    width: 100%;
+    border: 0;
+    background: none;
+    border-radius: 5px;
+}
+
+input#logout:hover {
+    background-color: #0366d6;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav i#toggle_btn {
+        display: block;
+    }
+
+    div.navbar_content {
+        flex-direction: column;
+        display: contents;
+        margin: 0;
+        display: none;
+    }
+
+    ul.navbar_menu {
+        flex-direction: column;
+    }
+
+    ul.navbar_menu li {
+        width: 100%;
+    }
+
+    ul.navbar_menu li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    li.navbar_item {
+        flex-direction: column;
+    }
+    
+    p#user_id {
+        width: 100%;
+        text-align: center;
+    }
+
+    div.user_menu {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        margin-bottom: 20px;
+        border: 0;
+    }
+
+    div.user_menu h3, div.user_menu p {
+        display: none;
+    }
+
+    div.user_menu a {
+        position: relative;
+        font-size: 30px;
+    }
+
+    div.user_menu a:hover {
+        background-color: #E9EDF2;
+    }
+
+    form input#money {
+        width: 50%;
+    }
+
+    form input#money_submit {
+        font-size: 17px;
+    }
+
+    form input#money_submit:hover {
+        background-color: #E9EDF2;
+        color: black;
+    }
+
+    input#logout {
+        font-size: 16px;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    input#logout:hover {
+        background: none;
+        color: black;
+    }
+}

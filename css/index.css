@@ -1,0 +1,255 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+div.wrap {
+    position: relative;
+    width: 100%;
+}
+
+div.background {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    display: block;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    height: 1000px;
+}
+
+div.sign_up {
+    margin: auto;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+}
+
+div.sign_up h1 {
+    color: #fff;
+    margin: 0px 0px 90px 0px;
+}
+
+div.sign_up input#address, div.sign_up input#search_symbol {
+    height: 20px;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 16px 24px;
+    font-size: 15px;
+    border: 0px;
+}
+
+div.sign_up input#sign_up {
+    height: 55px;
+    border-radius: 10px;
+    width: 90px;
+    background-color: #2ea44f;
+    color: #fff;
+    font-size: 17px;
+    border: 0px;
+}
+
+div.sign_up input#sign_up:hover {
+    background-color: #288F45;
+}
+
+div.sign_up input:focus {
+    outline: none;
+}
+
+section.row {
+    position: relative;
+    top: 1000px;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    background-color: #f8f9fa;
+    vertical-align: middle;
+}
+
+section.row div.col {
+    height: 50%;
+    position: relative;
+    top: 90px;
+}
+
+section.row div.col div.icon {
+    text-align: center;
+}
+
+section.row div.col h3 {
+    text-align: center;
+}
+
+section.row div.col p {
+    margin: auto;
+    width: 58%;
+    text-align: center;
+}
+
+div.about {
+    position: absolute;
+    width: 100%;
+    top: 1476px;
+}
+
+div.about div.about_row {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+div.about div.about_row div.about_description {
+    padding: 120px 0px;
+    text-align: center;
+    width: 50%;
+    line-height: 200px;
+    flex: 0 0 auto;
+}
+
+div.about div.about_row div.about_description p {
+    font-size: 18px;
+    margin: 0;
+}
+
+div.about div.about_row div.about_img {
+    width: 50%;
+    flex: 0 0 auto;
+    background-size: cover;
+    min-height: 30rem;
+}
+
+div.contact {
+    position: relative;
+    top: 2000px;
+    text-align: center;
+    display: table;
+    margin: auto;
+
+}
+
+div.contact input:focus {
+    outline: none;
+}
+
+div.contact input#user_name, div.contact input#user_email {
+    width: 90%;
+    height: 30px;
+    padding: 16px 0px 16px 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+div.contact textarea#message {
+    width: 90%;
+    height: 150px;
+    padding: 16px 0px 16px 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    resize: none;
+}
+
+div.contact textarea:focus {
+    outline: none;
+}
+
+div.contact input#send {
+    width: 30%;
+    font-size: 17px;
+    height: 80px;
+    border-radius: 30px;
+    opacity: 0.65;
+    background-color: #f4623a;
+    border-color: #f4623a;
+    margin-bottom: 50px;
+}
+
+div.contact input#send:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    top: 3200px;
+    background-color: #3c3935;
+    height: 100px;
+}
+
+footer div.footer {
+    width: 50%;
+    margin: auto;
+}
+
+footer div.footer p {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    div.background {
+        height: 500px;
+    }
+
+    div.sign_up {
+        top: 40px;
+    }
+
+    div.sign_up input#address, div.sign_up input#search_symbol {
+        padding: 16px 0px 16px 24px;
+        width: 440px;
+    }
+
+    div.sign_up input#sign_up {
+        margin-top: 20px;
+        width: 465px;
+    }
+
+    section.row {
+        top: 503px;
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    div.about {
+        top: 1579px;
+    }
+
+    div.about div.about_row {
+        display: contents;
+    }
+
+    div.about div.about_row div.about_img {
+        width: auto;
+        background-size: cover;
+    }
+
+    div.about div.about_row div.about_description {
+        line-height: normal;
+        padding: 120px 0px;
+        margin: auto;
+    }
+
+    footer {
+        top: 3700px;
+    }
+}
+
+

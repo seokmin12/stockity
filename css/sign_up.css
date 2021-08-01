@@ -1,0 +1,84 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+div.main {
+    z-index: 10;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    top: 200px;
+}
+
+form {
+    width: 100%;
+}
+
+table {
+    margin: auto;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-left: 3px solid #369;
+    width: 30%;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+input {
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 5px 5px 10px;
+    width: 70%;
+    font-size: 15px;
+}
+
+input#address {
+    opacity: 0.6;
+}
+
+input:focus {
+    outline: none;
+}
+
+div.submit {
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    height: 50px;
+}
+
+div.submit input#sign_up {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #2ea44f;
+    color: #fff;
+}
+
+div.submit input#sign_up:hover {
+    background-color: #288F45;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    table {
+        width: 98%;
+        margin: auto;
+    }
+
+    div.submit{
+        width: 98%;
+    }
+}
